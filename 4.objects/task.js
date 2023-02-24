@@ -5,33 +5,18 @@
   this.marks = [];
   
 }
-let student = new Student();
-let student2 = new Student();
-let student3 = new Student();
-let student4 = new Student();
-let student5 = new Student();
-
 
 Student.prototype.setSubject = function (subjectName) {
-    this.subject = (subjectName);
-   
-    return(this.subject);
+  this.subject = (subjectName);
 }
- 
 
 Student.prototype.addMarks = function (...marksToAdd) {
     if (this.marks) {
-
-       this.marks.length;
+      this.marks.length;
       this.marks.push(...marksToAdd);
-    
-     } 
-     return (this.marks);
+    } 
+     
 }
-  
-
-
-
 
 Student.prototype.getAverage = function () {
     let result = this.marks.reduce((acc, item, index, marks) => {
@@ -51,6 +36,5 @@ Student.prototype.exclude = function (reason) {
   delete this.subject;
   delete this.marks;
   this.excluded = (reason);
-  return(this.excluded);
 }
 
